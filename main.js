@@ -1,0 +1,1 @@
+const navitems = document.querySelectorAll(.)
