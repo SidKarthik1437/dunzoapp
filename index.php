@@ -23,15 +23,15 @@
                 <div class='location'>
                     <div class="location-left ripple">
         
-                        <i class="material-icons location_icon dcolor" >location_on</i>
+                        <i class="material-icons location_icon dcolor noselect" >location_on</i>
                         <span class="location_text noselect">Sydney</span>
-                        <i class="material-icons dcolor">keyboard_arrow_down</i>
+                        <i class="material-icons dcolor noselect">keyboard_arrow_down</i>
         
                     </div>
                     
                     <div class="location-right">
-                        <i class="material-icons ripple" >person</i>
-                        <i class="material-icons ripple">shopping_cart</i>
+                        <i class="material-icons ripple noselect" >person</i>
+                        <i class="material-icons ripple noselect">shopping_cart</i>
                     </div>
                 </div>
             </nav>
@@ -44,20 +44,20 @@
                 </div>
             
 
-            <h5 style="font-weight:700;
-                margin-top:0;">Instant delivery to your doorstep</h5>
+            <h5 class="noselect" style="font-weight:700; margin-top:0;">
+                Instant delivery to your doorstep</h5>
             <div class="categorycards">
                 
-                <div class="cardmenu ripple" style="background:#0cb071;">
+                <div class="cardmenu ripple noselect" style="background:#0cb071;">
                     <span>Groceries & <br> Essentials</span>
                     <img src="Icons/groc.svg" alt=""></div>
-                <div class="cardmenu ripple" style="background:#1ee348;">
+                <div class="cardmenu ripple noselect" style="background:#1ee348;">
                     <span>Fruits & <br>Vegetables</span>
                     <img src="Icons/fruits.svg" alt=""></div>
-                <div class="cardmenu ripple" style="background:#05a0e3;">
+                <div class="cardmenu ripple noselect" style="background:#05a0e3;">
                     <span>Pickup & <br> Drop</span>
                     <img src="Icons/pickup.svg" alt=""></div>
-                <div class="cardmenu ripple" style="background:#fc4283;">
+                <div class="cardmenu ripple noselect" style="background:#fc4283;">
                     <span>Meat & <br> Fish  </span>
                     <img src="Icons/meat.svg" alt=""></div>
             </div>  
@@ -66,33 +66,33 @@
                 <div class="cardrow">
                     <div class="services_card ripple">
                       <img src="Icons/foodel.svg" class="servicesicon" alt="" ></img>
-                    <span class="servicestext">Food Delivery</span>  
+                    <span class="servicestext noselect">Food Delivery</span>  
                     </div>
                     <div class="services_card ripple">
                       <img src="Icons/meds.svg" class="servicesicon" alt="" ></img>
                       <br>
-                    <span class="servicestext">Medicines</span>  
+                    <span class="servicestext noselect">Medicines</span>  
                     </div>
                     <div class="services_card ripple">
                     <img class="servicesicon" src="Icons/paan2.svg">
                     <br>
-                    <span class="servicestext">Paan Shop</span>  
+                    <span class="servicestext noselect">Paan Shop</span>  
                     </div>
                     <div class="services_card ripple">
                     <img class="servicesicon" src="Icons/store.svg">
-                    <span class="servicestext">Any store in the city</span>  
+                    <span class="servicestext noselect">Any store in the city</span>  
                     </div>
                     <div class="services_card ripple">
                     <img class="servicesicon" src="Icons/petsup.svg">
-                    <span class="servicestext">Pet Supplies</span>  
+                    <span class="servicestext noselect">Pet Supplies</span>  
                     </div>
                     <div class="services_card ripple">
                       <img src="Icons/hanw2.svg" class="servicesicon" alt="" ></img>
-                    <span class="servicestext">Health and Wellness</span>  
+                    <span class="servicestext noselect">Health and Wellness</span>  
                     </div>
                     <div class="services_card ripple">
                       <img src="Icons/gifts.svg" class="servicesicon" alt="" ></img>
-                    <span class="servicestext">Gifts and Lifestyle</span>  
+                    <span class="servicestext noselect">Gifts and Lifestyle</span>  
                     </div>
                     
                 </div> 
