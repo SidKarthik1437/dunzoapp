@@ -10,14 +10,21 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        <link rel="stylesheet" href="Search.css">
+        <link rel="stylesheet" href="../Pages/Orders.css">
         <link rel="manifest" href="manifest.json">
         <title>Document</title>
     </head>
     <body>
-        <div class="container">
+
+        <div class="head">
             <h1>ORDERSSSS</h1>
         </div>
+
+        <div class="container">
+
+        </div>
+
+
         <footer>
         <nav class="nav" id="navfooter">
             

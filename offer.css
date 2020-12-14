@@ -1,0 +1,37 @@
+.offers{
+    background-color: white;
+    padding: 10px;
+}
+.extracards
+{
+    
+    display: block;
+    background-color: white;
+    color: black;
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.each_card{
+    border: 0 ;
+    border-radius: 3px;
+    margin:2px;
+    padding:0 3px 0 3px;
+    /* width:75%; */
+    background-color:white;
+    /* height: 200px; */
+    object-fit: contain;
+    align-items:center;
+    display: inline-flex;
+    flex-direction: column;
+    /* box-shadow: 0.3px 0.5px 4px 0px rgba(82, 82, 82, 0.236); */
+}
+
+.each_card > img
+{
+    
+    height: 200px;
+    border-radius: 5px;
+}
