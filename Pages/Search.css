@@ -113,7 +113,7 @@ body
     transition: 0s;
   }
 
-.container 
+.s_container 
 {
     width:100%;
     padding:0;
@@ -181,7 +181,7 @@ body
 }
 .dailyhead
 {
-    padding:10px;
+    /* padding:10px; */
     padding-top:0;
 }
 .dailyhead>h5
@@ -193,19 +193,19 @@ body
     margin-top:5px;
 }
 
-.search{
+.s_search{
     display: flex;
     margin: 25px 10px 25px 10px;
     /* margin-top:55px; */
     background: white;
     border:1px solid gray;
-    padding: 5px 15px 5px 15px;
+    /* padding: 5px 15px 5px 15px; */
     flex-direction: reverse-row;
     align-items: center;
     border-radius: 5px;
 
 }
-.search>input
+.s_search>input
 {
     border:none;
     background:white;

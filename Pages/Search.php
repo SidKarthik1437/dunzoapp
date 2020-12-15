@@ -16,8 +16,8 @@
         <title>Search</title>
     </head>
     <body>
-        <div class="container">
-            <div class="search noselect">
+        <div class="s_container">
+            <div class="s_search noselect">
                 <i class="material-icons">search</i>
                 <input class="noselect" type="text" placeholder="Search for an item or store"  />
             </div>
