@@ -16,13 +16,14 @@
     
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="offer.css">
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, viewport-fit=cover" />
-
+    <meta name="apple-mobile-web-app-status-bar-style" content="white ">
 
     <title>Dunzo</title>
 </head>
@@ -32,7 +33,7 @@
 
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div id='map' style='width: 100%; height: 700px;'></div>
+            <div id='map' style='width: 100%; height: 700px !important;'></div>
             <script>
             mapboxgl.accessToken = 'pk.eyJ1Ijoic2lka2FydGhpayIsImEiOiJja2lweDRkbGkwOGQyMzBsMzB1djBiemhkIn0._Gpz07Y4hPcMftrO_SFNCw';
             var map = new mapboxgl.Map({
@@ -49,6 +50,19 @@ enableHighAccuracy: true
 trackUserLocation: true
 })
 );
+
+var marker = new mapboxgl.Marker() // initialize a new marker
+  .setLngLat([-122.25948, 37.87221]) // Marker [lng, lat] coordinates
+  .addTo(map); // Add the marker to the map
+
+  var geocoder = new MapboxGeocoder({ // Initialize the geocoder
+  accessToken: mapboxgl.accessToken, // Set the access token
+  mapboxgl: mapboxgl, // Set the mapbox-gl instance
+  marker: false, // Do not use the default marker style
+});
+
+// Add the geocoder to the map
+map.addControl(geocoder);
             </script>
         </div>
     </div>
@@ -211,14 +225,14 @@ trackUserLocation: true
                 <a href="Pages/Orders.php" class="nav__link">
 
                     <i class="material-icons nav__icon">shopping_bag</i>
-                    <span class="nav__text">Orders</span>
+                    <span class="nav__text">ORDERS</span>
 
                 </a>
 
                 <a href="Pages/DC.php" class="nav__link">
 
                     <i class="material-icons nav__icon">account_balance_wallet</i>
-                    <span class="nav__text">DunzoCash</span>
+                    <span class="nav__text">AUSIPIKCASH</span>
 
                 </a>
 
