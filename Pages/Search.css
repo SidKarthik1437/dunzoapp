@@ -39,7 +39,7 @@ body
     justify-content: center;
     flex-grow: 1;
     max-width: 25%;
-    
+    /* color: lightgrey; */
     white-space: nowrap;
     
     font-size: 15px;
@@ -59,8 +59,12 @@ body
 
 .nav__icon {
     font-size: 22px;
+    color: #898E9C;
 }
-
+.nav__text {
+    font-size: 12px;
+    color: #898E9C;
+}
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -192,7 +196,10 @@ body
 {
     margin-top:5px;
 }
-
+.daily
+{
+    padding:10px;
+}
 .s_search{
     display: flex;
     margin: 25px 10px 25px 10px;
@@ -251,7 +258,7 @@ filter:sepia(100);
 }
 
 .nav-link{
-    /* padding:2px; */
+    padding:2px;
     color:gray;
 }
 .active
@@ -307,11 +314,11 @@ footer>ul>li>a
 {
     font-weight:600;
 }
-.adbanner>img
+.adbanner>img   
 {
     width:40%;
     right: 10px;
-    top: 250px;
+    top: 267px;
     
     position:absolute;
 }

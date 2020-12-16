@@ -10,53 +10,56 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+        <!-- <link rel="stylesheet" href="../index.css"> -->
         <link rel="stylesheet" href="../Pages/Orders.css">
         <link rel="manifest" href="manifest.json">
         <title>Document</title>
     </head>
     <body>
 
-        <div class="head">
-            <h1>ORDERSSSS</h1>
+        <div class="contain">
+
+            <div class="head">
+                <h3>Orders</h3>
+            </div>
+
         </div>
-
-        <div class="container">
-
-        </div>
+        
 
 
-        <footer>
-        <nav class="nav" id="navfooter">
-            
-            <a href="../index.php" class="nav__link">
+<footer>
 
-                <i class="material-icons nav__icon">home</i>
-                <span class="nav__text">HOME</span>
+<nav class="nav" id="navfooter">
 
-            </a>
+    <a href="" class="nav__link nav__link--active">
 
-            <a href="../Pages/Search.php" class="nav__link ">
+        <i class="material-icons nav__icon ">home</i>
+        <span class="nav__text ">HOME</span>
 
-                <i class="material-icons nav__icon">search</i>
-                <span class="nav__text">SEARCH</span>
+    </a>
 
-            </a>
-            
-            <a href="" class="nav__link nav__link--active">
+    <a href="Pages/Search.php" class="nav__link ">
 
-                <i class="material-icons nav__icon">shopping_bag</i>
-                <span class="nav__text">Orders</span>
+        <i class="material-icons nav__icon ">search</i>
+        <span class="nav__text ">SEARCH</span>
 
-            </a>
+    </a>
 
-            <a href="../Pages/DC.php" class="nav__link">
+    <a href="Pages/Orders.php" class="nav__link">
 
-                <i class="material-icons nav__icon">account_balance_wallet</i>
-                <span class="nav__text">DunzoCash</span>
-                
-            </a>
- 
-        </nav>
-        </footer>
+        <i class="material-icons nav__icon">shopping_bag</i>
+        <span class="nav__text">ORDERS</span>
+
+    </a>
+
+    <a href="Pages/DC.php" class="nav__link">
+
+        <i class="material-icons nav__icon">account_balance_wallet</i>
+        <span class="nav__text">AUSIPIKCASH</span>
+
+    </a>
+
+</nav>
+</footer>
     </body>
 </html>
