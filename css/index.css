@@ -15,6 +15,10 @@ body
     padding:10px;
     
 }
+.active
+{
+    color: #009578; 
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -319,6 +323,8 @@ img
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    -webkit-overflow-scrolling: touch;
+ 
 }
 
 .each_card{
@@ -549,3 +555,132 @@ br
       #target {
         width: 345px;
       }
+      .login_container
+      {
+        /* background: rgb(15,188,249);
+        background: -moz-linear-gradient(top,  rgba(15,188,249,1) 0%, rgba(75,207,250,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(15,188,249,1)), color-stop(100%,rgba(75,207,250,1)));
+        background: -webkit-linear-gradient(top,  rgba(15,188,249,1) 0%,rgba(75,207,250,1) 100%);
+        background: -o-linear-gradient(top,  rgba(15,188,249,1) 0%,rgba(75,207,250,1) 100%);
+        background: -ms-linear-gradient(top,  rgba(15,188,249,1) 0%,rgba(75,207,250,1) 100%);
+        background: linear-gradient(to bottom,  rgba(15,188,249,1) 0%,rgba(75,207,250,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0fbcf9', endColorstr='#4bcffa',GradientType=0 ); */
+        height: 100vh;
+      }
+      .bottomcard
+      {
+         height:90px;
+        -webkit-box-shadow: 0px -11px 47px 7px rgba(125,200,250,0.77);
+        -moz-box-shadow: 0px -11px 47px 7px rgba(125,200,250,0.77);
+        box-shadow: 0px -11px 47px 7px rgba(125,200,250,0.77);
+         padding:25px;
+         padding-top:20px !important;
+         padding-bottom:40px !important;
+          background:white;
+          align-items:center;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          
+          
+      }
+      .logo_container
+      {
+        position: relative;
+        top: 50%;
+        left: 50%;
+       
+        
+      }
+      .logo>img
+      {
+        object-fit:contain;
+        width:150px;
+      }
+      .cardup
+      {
+        position: relative;
+        -webkit-animation-name: cardup ease-in;
+        -webkit-animation-duration: 1s ease;
+        animation-name: cardup;
+        animation-duration: 0.5s;
+        height:185px;
+      }
+
+      @-webkit-keyframes cardup {
+        from { height:90px } 
+        to {  height:185px}
+      }
+      @keyframes cardup { 
+        from{   height:90px} 
+        to{   height:185px }
+      }
+      
+      .input
+      {
+          width:90%;
+          display:inline-flex;
+        align-items:center;
+        margin-bottom: 40px;
+        
+      }
+
+      .input>span
+      {
+          position:absolute;
+          float:left;
+          
+          font-size:20px;
+          padding:6.5px;
+          
+          /* border-right:none !important;
+          border-radius:10px 0 0 10px; */
+          border:none ;
+          outline:none;
+      }
+      .number_text
+      {
+          padding-left:25px !important;
+          padding:10px;
+         width:90%;
+         border-color:#ffa1a1c2;
+         /* border-left: none; */
+          border-radius:10px;
+          outline:none;
+          font-size:20px;
+          font-family:arial;
+      }
+      
+      .continuebutton
+      {    
+        padding: 10px 50px 10px 50px;
+        border: 0px;
+        font-size: 20px;
+        outline: none;
+        width:86%;
+        border-radius: 31px;
+        color: white;
+        border: 1px solid #150909;
+        background: #ff5d5d;
+        visibility: hidden;
+        -webkit-animation-name: cardup ease-in;
+        -webkit-animation-duration: 1s ease;
+        animation-name: cardup;
+        animation-duration: 1s
+         
+      }
+      .number_text::placeholder
+      {
+          text-align:center;
+      }
+      .buttondisplay{
+           
+          visibility:visible;
+          border: 0;
+        
+      }
+      .welcome_text{
+        color: #116b8ccf;
+        text-align: left;
+        margin-left: 25px;
+      }
+

@@ -26,7 +26,7 @@
         src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDzUFSB9R2QnSPNr7-zVUxZr4eCfiGH5fY"></script>
 
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="css/offer.css">
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white ">
@@ -48,14 +48,22 @@
                     center: [77.594566, 12.971599], // starting position [lng, lat]
                     zoom: 8 // starting zoom
                 });
-                map.addControl(
-                    new mapboxgl.GeolocateControl({
+               
+                  var geolocate =  new mapboxgl.GeolocateControl({
                         positionOptions: {
                             enableHighAccuracy: true
                         },
                         trackUserLocation: true
                     })
-                );
+                
+                    map.addControl(geolocate);
+                    geolocate.on('geolocate', function(e) {
+      const lon = e.coords.longitude;
+      const lat = e.coords.latitude
+      var position = [lon, lat];
+      console.log(position);
+});    
+
 
                 var marker = new mapboxgl.Marker() // initialize a new marker
                     .setLngLat([-122.25948, 37.87221]) // Marker [lng, lat] coordinates
@@ -75,6 +83,15 @@
 
                 // Add the geocoder to the map
                 map.addControl(geocoder);
+                geocoder.mapboxClient
+  .geocodeReverse({
+    latitude: lon, 
+    longitude: lat
+  }, function(err, res) {
+    console.log(err, res)
+  });
+
+
 
                 map.on('load', function() {
     map.addSource('single-point', {
@@ -128,7 +145,7 @@
             </nav>
             <div class='container'>
                 <div class="container_top">
-                    <div class="search noselect noref ripple" id="search-btn">
+                    <div class="search noselect noref ripple" id="search-btn" onclick="window.location.href = 'Pages/Search.php'">
                         <!-- <button type="button" class="btn" id="search-btn"> -->
                         <i class="material-icons">search</i>
                         <input type="text" placeholder="Search for store/item" disabled />
@@ -220,26 +237,24 @@
                         <div class="extracards">
                             <div class="cardrow">
                                 <div class="each_card">
-                                    <img src="Images/offer1.png">
+                                    <img src="Images/pizza.jpg" alt="" />
                                 </div>
                                 <div class="each_card">
-                                    <img src="Images/dunzo3.jpg">
+                                    <img src="Images/chicken.jpg" alt="" />
                                 </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="offers">
-                        <h5 style="font-weight:700; margin-top:0;">Assistant</h5>
-                        <div class="extracards">
-                            <div class="cardrow">
-                                <div class="each_card1">
-                                    <img src="Images/dunzo2.jpg">
+                                <div class="each_card">
+                                    <img src="Images/pasta.jpg" alt="" />
+                                </div>
+                                <div class="each_card">
+                                    <img src="Images/bakery.jpg" alt="" />
+                                </div>
+                                <div class="each_card">
+                                    <img src="Images/vegetables.jpg" alt="" />
+                                </div>
+                                <div class="each_card">
+                                    <img src="Images/pizza.jpg" alt="" />
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -250,42 +265,7 @@
                 </div>
 
 
-                <footer>
-
-
-
-                    <nav class="nav" id="navfooter">
-
-                        <a href="" class="nav__link nav__link--active">
-
-                            <i class="material-icons nav__icon ">home</i>
-                            <span class="nav__text ">HOME</span>
-
-                        </a>
-
-                        <a href="Pages/Search.php" class="nav__link ">
-
-                            <i class="material-icons nav__icon ">search</i>
-                            <span class="nav__text ">SEARCH</span>
-
-                        </a>
-
-                        <a href="Pages/Orders.php" class="nav__link">
-
-                            <i class="material-icons nav__icon">shopping_bag</i>
-                            <span class="nav__text">ORDERS</span>
-
-                        </a>
-
-                        <a href="Pages/DC.php" class="nav__link">
-
-                            <i class="material-icons nav__icon">account_balance_wallet</i>
-                            <span class="nav__text">AUSIPIKCASH</span>
-
-                        </a>
-
-                    </nav>
-                </footer>
+                <?php include 'footer.php'; ?>
                 <script src="main.js"></script>
 
 </body>
